@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            deployMe
+        </title>
+        <link rel="stylesheet" href="CascadingStyleSheets/index.css">
+    </head>
+    <body>
+        <h1 align="center" class="headerDisplayStyle">Deploy Me</h1>
+        <div style="text-align: center" class="centerElements">Welcome to deployMe the newbie deployment framework. Just a single click and we have your stuff deployed.</div>
+        <br>
+        <br>
+        <select class="centerElements inputStyle" name="dType" id="dType">
+            <option value="Node.js">Node.js</option>
+            <option value="Angular.js">Angular.js</option>
+            <option value="html_basic">HTML Basic with AJAX and PHP calls</option>
+        </select>
+        <br>
+        <br>
+        <input type="number" class="centerElements inputStyle" placeholder="Port" id="portNumber">
+        <br>
+        <br>
+        <input type="text" placeholder="Repository Url"  class="centerElements inputStyle" id="repoLink">
+        <br>
+        <br>
+        <input type="text" placeholder="Index File" class="centerElements inputStyle" id="indexFile">
+        <br>
+        <br>
+        <input type="text" placeholder="repository name" class="centerElements inputStyle" id="repoName">
+        <br>
+        <br>
+        <button type="button" class="buttonParams centerElements" onclick="deploy()" >   Deploy    </button>
+        <br>
+        <br>
+        <button type="button" class="buttonParams centerElements" style="background-color: #4781ff" onclick="codingInterface()">Try our Coding Interface</button>
+        <br>
+        <br>
+        <textarea id="codingArea" placeholder="Enter your deployMe Code" class="centerElements" style="visibility: collapse;width: 100%;height: 50%"></textarea>
+        <br>
+        <br>
+        <button type="button" id="compileBtn" onclick="compile()" class="buttonParams centerElements" style="background-color: #4781ff;visibility: collapse" >Compile and deploy</button>
+
+
+        <div style="text-align: center;font-family: Calibri,sans-serif;">&copy; Company Sergeant Major Sangameswaran R S</div>
+
+    </body>
+    <script src="Javascript/index.js" type="text/javascript"></script>
+</html>
